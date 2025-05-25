@@ -1,0 +1,7 @@
+.Product-Container{
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}

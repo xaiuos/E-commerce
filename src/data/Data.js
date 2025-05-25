@@ -26,3 +26,14 @@ export const CategorieData = [
   { id: 1, image: "/longwear.jpg", title: "LONGWEAR LOVE" },
   { id: 2, image: "/lightjacket.jpg", title: "LIGHT JACKETS" },
 ];
+
+export const ProductItemsList = [
+  { id: 0, image: "/Product/1.png" },
+  { id: 1, image: "/Product/2.png" },
+  { id: 2, image: "/Product/3.png" },
+  { id: 3, image: "/Product/4.png" },
+  { id: 4, image: "/Product/5.png" },
+  { id: 5, image: "/Product/6.png" },
+  { id: 6, image: "/Product/7.png" },
+  { id: 7, image: "/Product/8.png" },
+];

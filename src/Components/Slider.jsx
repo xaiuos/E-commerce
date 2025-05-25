@@ -67,7 +67,7 @@ export const Slider = () => {
                 <div className="Image-Label">
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
-                  <button>SHOW NOW</button>
+                  <button className="Slider-Button">SHOW NOW</button>
                 </div>
               </div>
             );

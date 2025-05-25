@@ -21,7 +21,7 @@
     width: 100%;
     margin: 10px;
 }
-button{
+.Categorie-Background button{
     border: 2px solid white;
     border-left: none;
     border-right: none;
@@ -33,4 +33,14 @@ button{
     height: 5vh;
     border-radius: 10px;
     background-color:rgba(0, 0, 0, 0.5) ;
+    transition: all 0.5s ease;
+}
+
+.Categorie-Background button:hover{
+transform: scale(1.2);
+background-color: white;
+color: rgba(0, 0, 0, 0.5);
+border:  2px solid rgb(0, 0, 0);
+border-left: none;
+border-right: none;
 }

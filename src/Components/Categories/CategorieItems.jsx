@@ -8,7 +8,7 @@ const CategorieItems = ({ CateItems }) => {
         style={{ backgroundImage: `url(${CateItems.image})` }}
       >
         <h1 className="Title">{CateItems.title}</h1>
-        <button>SHOP NOW</button>
+        <button className="Categorie-Button">SHOP NOW</button>
       </div>
     </>
   );
