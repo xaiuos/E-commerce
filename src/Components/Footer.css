@@ -1,0 +1,76 @@
+.FooterContainer {
+  display: flex;
+}
+.FooterContainer > div {
+  flex: 1;
+  padding: 20px;
+}
+.Left {
+  display: flex;
+  flex-direction: column;
+}
+.Logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+.LeftDescription {
+  margin: 20px 0px;
+}
+.SocialContainer {
+  display: flex;
+}
+.SocialContainer > div {
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(216, 192, 255);
+}
+/* .Center{
+
+}
+.Right{
+
+} */
+.CenterTitle {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 27px;
+}
+.Center > ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Center ul > li {
+  cursor: pointer;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.RightContactItem {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.RightContactItem > div:nth-of-type(2n) {
+  flex: 12;
+}
+.RightContactItem .Icon {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RightTitle {
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 20px;
+}

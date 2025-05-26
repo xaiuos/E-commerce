@@ -1,0 +1,45 @@
+.NewsLetterContainer {
+  height: 40vh;
+  background-color: rgb(248 250 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.NewsLetterContainer * {
+  margin: 15px;
+}
+.NewsLetterTitle {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.NewsLetterDescription {
+  font-size: 27px;
+}
+
+.NewsLetterInputContainer {
+  width: 50%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+}
+.NewsLetterInputContainer button {
+  cursor: pointer;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  border: none;
+  background-color: #e7e5ff;
+}
+.NewsLetterInputContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  flex: 8;
+}

@@ -31,7 +31,12 @@
 
 .SearchContainer input{
     border: none;
-
+    outline: none; 
+    width: 100%;
+}
+.SearchContainer input:focus{
+    border: none;
+    outline: none; 
     width: 100%;
 }
 .SecondSide{
