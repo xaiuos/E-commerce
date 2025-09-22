@@ -1,0 +1,13 @@
+.FilterContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.PLT {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 30px;
+}
+.Filter {
+  display: flex;
+  margin: 30px;
+}
