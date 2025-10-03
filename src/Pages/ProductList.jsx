@@ -3,8 +3,8 @@ import Announcement from "../Components/Announcement";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import Product from "../Components/Product/Product";
-import "./ProductList.css";
 import NewsLetter from "../Components/NewsLetter";
+import "./ProductList.css";
 const ProductList = () => {
   return (
     <>
