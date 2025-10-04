@@ -69,10 +69,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.SPAddWrapper {
-}
-.Remove {
-}
+
 .Ammount {
   width: 30px;
   height: 30px;
@@ -81,8 +78,7 @@
   text-align: center;
   margin: 10px;
 }
-.Add {
-}
+
 .AddButton {
   padding: 10px;
   width: 200px;
@@ -92,5 +88,6 @@
   cursor: pointer;
 }
 .AddButton:hover {
-  border: 2px solid rgb(89, 0, 255);
+  border: 2px solid rgba(89, 0, 255, 0.13);
+  background-color: rgba(132, 0, 255, 0.055);
 }

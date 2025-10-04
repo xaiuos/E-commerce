@@ -1,0 +1,38 @@
+.RegisterContainer {
+  background-color: rgb(214, 189, 255);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.RegisterInputContainer {
+  border-radius: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(233, 219, 255);
+}
+.RegisterTitle {
+  margin: 10px;
+}
+.RegisterForm {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  flex: 1 1 45%;
+  margin: 10px;
+}
+.Agreement {
+  margin: 10px;
+}
+.RegisterButton {
+  margin: 20px;
+}
