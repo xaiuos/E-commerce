@@ -1,11 +1,9 @@
-import Home from "./Pages/Home";
 import "./App.css";
-import Product from "./Pages/Product";
-import Login from "./Pages/Login";
+import Cart from "./Pages/Cart";
 function App() {
   return (
     <>
-      <Login />
+      <Cart />
     </>
   );
 }

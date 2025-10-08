@@ -13,6 +13,7 @@ export const Login = () => {
           </form>
           <button className="RegisterButton">Log in</button>
           <a href="" className="ForgetPassword">Forget Password</a>
+          <a href="" className="CreateAccountLogin">Create Account</a>
         </div>
       </div>
     </>
