@@ -1,21 +1,21 @@
 import React from "react";
-import "./NavBar.css";
+import style from "./NavBar.module.css";
 import SearchIcon from "@mui/icons-material/Search";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 const NavBar = () => {
   return (
-    <div className="NavBar">
-      <div className="FirstSide">
-        <div className="Language">EN</div>
-        <div className="SearchContainer">
+    <div className={style.NavBar}>
+      <div className={style.FirstSide}>
+        <div className={style.Language}>EN</div>
+        <div className={style.SearchContainer}>
           <input></input>
           <SearchIcon />
         </div>
       </div>
 
-      <div className="SecondSide">XAI.</div>
-      <div className="ThirdSide">
+      <div className={style.SecondSide}>XAI.</div>
+      <div className={style.ThirdSide}>
         <div>Register</div>
         <div>Login</div>
         <div>

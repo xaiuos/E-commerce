@@ -1,22 +1,22 @@
 import React from "react";
-import "./Register.css";
+import style from "./Register.module.css";
 export const Register = () => {
   return (
     <>
-      <div className="RegisterContainer">
-        <div className="RegisterInputContainer">
-          <div className="RegisterTitle">Create Account</div>
-          <form className="RegisterForm" action="" method="post">
+      <div className={style.RegisterContainer}>
+        <div className={style.RegisterInputContainer}>
+          <div className={style.RegisterTitle}>Create Account</div>
+          <form className={style.RegisterForm} action="" method="post">
             <input type="Name" id="Name" placeholder="Name" />
             <input type="Email" id="Email" placeholder="Email" />
             <input type="User" id="User" placeholder="User" />
             <input type="Password" id="Password" placeholder="Passwword" />
           </form>
-          <div className="Agreement">
+          <div className={style.Agreement}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi sit
             error magnam illum, ad repellat id non eum deleniti
           </div>
-          <button className="RegisterButton">Create</button>
+          <button className={style.RegisterButton}>Create</button>
         </div>
       </div>
     </>

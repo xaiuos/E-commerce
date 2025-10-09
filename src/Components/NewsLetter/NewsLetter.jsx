@@ -1,15 +1,15 @@
 import React from "react";
-import "./NewsLetter.css";
+import style from "./NewsLetter.module.css";
 import SendIcon from "@mui/icons-material/Send";
 const NewsLetter = () => {
   return (
     <>
-      <div className="NewsLetterContainer">
-        <h1 className="NewsLetterTitle"> Newsletter</h1>
-        <div className="NewsLetterDescription">
+      <div className={style.NewsLetterContainer}>
+        <h1 className={style.NewsLetterTitle}> Newsletter</h1>
+        <div className={style.NewsLetterDescription}>
           Get timely updates from your favorite products.
         </div>
-        <div className="NewsLetterInputContainer">
+        <div className={style.NewsLetterInputContainer}>
           <input placeholder="Your Email" type="text" />
           <button>
             <SendIcon />

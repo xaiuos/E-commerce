@@ -1,14 +1,14 @@
 import React from "react";
-import "./CategorieItems.css";
+import styles from "./CategorieItems.module.css";
 const CategorieItems = ({ CateItems }) => {
   return (
     <>
       <div
-        className="Categorie-Background"
+        className={styles.CategorieBackground}
         style={{ backgroundImage: `url(${CateItems.image})` }}
       >
-        <h1 className="Title">{CateItems.title}</h1>
-        <button className="Categorie-Button">SHOP NOW</button>
+        <h1 className={styles.Title}> {CateItems.title} </h1>
+        <button className={styles.CategorieButton}>SHOP NOW</button>
       </div>
     </>
   );

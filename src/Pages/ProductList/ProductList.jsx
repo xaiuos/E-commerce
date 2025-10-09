@@ -1,19 +1,19 @@
 import React from "react";
-import Announcement from "../Components/Announcement";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
-import Product from "../Components/Product/Product";
-import NewsLetter from "../Components/NewsLetter";
-import "./ProductList.css";
+import Announcement from "../../Components/Announcement/Announcement";
+import NavBar from "../../Components/NavBar/NavBar";
+import Footer from "../../Components/Footer/Footer";
+import Product from "../../Components/Product/Product/Product";
+import NewsLetter from "../../Components/NewsLetter/NewsLetter";
+import style from "./ProductList.module.css";
 const ProductList = () => {
   return (
     <>
       <Announcement />
       <NavBar />
-      <h1 className="PLT">Dresses</h1>
-      <div className="FilterContainer">
-        <div className="Filter">
-          <div className="FilterText">Filter Products:</div>
+      <h1 className={style.PLT}>Dresses</h1>
+      <div className={style.FilterContainer}>
+        <div className={style.Filter}>
+          <div className={style.FilterText}>Filter Products:</div>
           <select>
             <option value="White">White</option>
             <option value="Black">Black</option>
@@ -28,8 +28,8 @@ const ProductList = () => {
             <option value="XXL">XXL</option>
           </select>
         </div>
-        <div className="Filter">
-          <div className="FilterText">Sort Products:</div>
+        <div className={style.Filter}>
+          <div className={style.FilterText}>Sort Products:</div>
           <select name="sort">
             <option value="Newest">Newest</option>
             <option value="asc">Price (asc)</option>

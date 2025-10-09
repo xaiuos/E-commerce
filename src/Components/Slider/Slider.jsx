@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import "./Slider.css";
+import style from "./Slider.module.css";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import { SliderItems } from "../data/Data";
+import { SliderItems } from "../../data/Data";
 export const Slider = () => {
   const [slideIndexCounter, setSlideIndexCounter] = useState(0);
   const sliderHack = useRef(null);
@@ -47,9 +47,9 @@ export const Slider = () => {
 
   return (
     <>
-      <div className="Slider">
+      <div className={style.Slider}>
         <div
-          className="Wrapper"
+          className={style.Wrapper}
           style={{ transform: `translateX(${slideIndexCounter * -100}vw)` }}
           ref={sliderHack}
         >
@@ -58,17 +58,17 @@ export const Slider = () => {
             return (
               <div
                 key={item.id}
-                className="Container"
+                className={style.Container}
                 style={{ backgroundColor: item.backgroundcolor }}
               >
-                <div className="Image">
+                <div className={style.Image}>
                   <img src={item.image} alt="" />
                 </div>
-                <div className="Image-Label">
+                <div className={style.ImageLabel}>
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
-                  <div className="ContainSliderButton">
-                    <button className="Slider-Button">SHOW NOW</button>
+                  <div className={style.ContainSliderButton}>
+                    <button className={style.SliderButton}>SHOW NOW</button>
                   </div>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export const Slider = () => {
           {/* slide wraper end here */}
         </div>
         <div
-          className="Arrow Left"
+          className={`${style.Arrow} ${style.Left}`}
           onClick={() => {
             slideClick("Left-Click");
           }}
@@ -86,7 +86,7 @@ export const Slider = () => {
         </div>
 
         <div
-          className="Arrow Right"
+          className={`${style.Arrow} ${style.Right}`}
           onClick={() => {
             slideClick("Right-Click");
           }}

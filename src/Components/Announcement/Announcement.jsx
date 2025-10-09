@@ -1,9 +1,9 @@
 import React from "react";
-import "./Announcement.css";
+import style from "./Announcement.module.css";
 const Announcement = () => {
   return (
     <>
-      <div className="Announcement">
+      <div className={style.Announcement}>
         Super Deal! Free Shipping on Orders Over $50
       </div>
     </>

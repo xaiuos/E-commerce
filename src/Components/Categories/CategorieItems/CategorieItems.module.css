@@ -3,7 +3,7 @@
   padding-bottom: 5vh;
   background-color: rgba(255, 192, 203, 0.07);
 }
-.Categorie-Background {
+.CategorieBackground {
   border-radius: 40%;
   margin: 20px;
   height: 70vh;
@@ -27,7 +27,7 @@
   margin: 30px;
 }
 
-.Categorie-Background button {
+.CategorieBackground button {
   cursor: pointer;
 
   font-weight: bold;
@@ -49,7 +49,7 @@
   text-align: center;
 }
 
-.Categorie-Background button:hover {
+.CategorieBackground button:hover {
   transform: scale(1.2);
 
   background-color: rgba(92, 0, 0, 0.5);

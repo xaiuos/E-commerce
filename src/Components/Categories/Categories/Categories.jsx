@@ -1,11 +1,11 @@
 import React from "react";
-import CategorieItems from "../Categories/CategorieItems";
-import { CategorieData } from "../../data/Data";
-import "./Categories.css";
+import CategorieItems from "../CategorieItems/CategorieItems.jsx";
+import { CategorieData } from "../../../data/Data";
+import styles from "../Categories/Categories.module.css";
 export const Categories = () => {
   return (
     <>
-      <div className="Categorie">
+      <div className={styles.Categorie}>
         {CategorieData.map((CateItems) => {
           return <CategorieItems key={CateItems.id} CateItems={CateItems} />;
         })}

@@ -1,22 +1,22 @@
 import React from "react";
-import "./ProductItems.css";
+import style from "./ProductItems.module.css";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 const ProductItems = ({ Product }) => {
   return (
     <>
-      <div className="Product-Image-Container">
-        <div className="Circle"></div>
+      <div className={style.ProductImageContainer}>
+        <div className={style.Circle}></div>
         <img src={Product.image} alt="" />
-        <div className="Icons">
-          <div className="ShoppingCartIcon">
+        <div className={style.Icons}>
+          <div className={style.ShoppingCartIcon}>
             <ShoppingCartOutlinedIcon />
           </div>
-          <div className="SearchIcon">
+          <div className={style.SearchIcon}>
             <SearchOutlinedIcon />
           </div>
-          <div className="HearIcon">
+          <div className={style.HearIcon}>
             <FavoriteBorderOutlinedIcon />
           </div>
         </div>
