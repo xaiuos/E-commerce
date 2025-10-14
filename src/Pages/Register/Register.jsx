@@ -3,20 +3,35 @@ import style from "./Register.module.css";
 export const Register = () => {
   return (
     <>
-      <div className={style.RegisterContainer}>
-        <div className={style.RegisterInputContainer}>
-          <div className={style.RegisterTitle}>Create Account</div>
-          <form className={style.RegisterForm} action="" method="post">
-            <input type="Name" id="Name" placeholder="Name" />
-            <input type="Email" id="Email" placeholder="Email" />
-            <input type="User" id="User" placeholder="User" />
-            <input type="Password" id="Password" placeholder="Passwword" />
+      <div className={style.container} id="container">
+        <div className={style.Wrapper}>
+          <form className={style.form} action="#">
+            <h1 className={style.h1}>Sign up</h1>
+            <div>
+              <input
+                className={style.input}
+                type="User"
+                id="User"
+                placeholder="User"
+              />
+              <input
+                className={style.input}
+                type="email"
+                id="Email"
+                placeholder="Email"
+              />
+              <input
+                className={style.input}
+                type="password"
+                id="Password"
+                placeholder="Password"
+              />
+              <a className={style.a} href="#">
+                Sign in
+              </a>
+            </div>
+            <button className={style.button}>Sign Up</button>
           </form>
-          <div className={style.Agreement}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi sit
-            error magnam illum, ad repellat id non eum deleniti
-          </div>
-          <button className={style.RegisterButton}>Create</button>
         </div>
       </div>
     </>

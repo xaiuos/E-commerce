@@ -1,42 +1,76 @@
-.LoginContainer {
-  background-color: rgb(214, 189, 255);
-  width: 100vw;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #eee6ff;
+
+  width: 100vw;
 }
-.LoginInputContainer {
-  border-radius: 20px;
-  width: 50%;
+.Wrapper {
+  border-radius: 10px;
+  box-shadow: -10px -10px 10px #f6f1ff, 10px 10px 10px #2300645b;
+  background: #eee6ff;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  background-color: rgb(233, 219, 255);
+  align-items: center;
   flex-direction: column;
-}
-.LoginTitle {
-  margin: 10px;
-}
-.LoginForm {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  height: 95vh;
+  width: 95vw;
 }
 
-input {
-  flex: 1 1 45%;
-  margin: 10px;
+.h1 {
+  margin-bottom: 20px;
 }
-.Agreement {
-  margin: 10px;
+
+.a {
+  display: block;
+  color: #333;
+  text-decoration: underline;
 }
-.LoginButton {
-  margin: 20px;
+
+.form {
+  background-color: #eee6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
 }
-.ForgetPassword .CreateAccountLogin {
-  margin: 10px;
+
+.input {
+  background-color: #eee6ff;
+  box-shadow: inset -2px -2px 4px #f6f1ff, inset 2px 2px 4px #2300645b;
+  border: none;
+  padding: 12px 15px;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.button {
+  border-radius: 20px;
+  border: 1px solid #872bff;
+  background-color: #872bff;
+  color: #eee6ff;
+  padding: 12px 45px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button.ghost {
+  background-color: transparent;
+  border-color: #eee6ff;
 }

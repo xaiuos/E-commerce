@@ -24,16 +24,12 @@
   flex: 1;
   padding: 0px 50px;
 }
-.SPTitle {
-  font-weight: bold;
-  font-size: 40px;
-}
 .SPDesc {
   margin: 20px 0px;
 }
 .SPPrice {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .SPFilterContainer {
@@ -50,7 +46,7 @@
 
 .SPFilterTitle {
   margin: 5px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -74,6 +70,9 @@
 }
 
 .Ammount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(98, 1, 255, 0.253);
@@ -93,4 +92,24 @@
 .AddButton:hover {
   border: 2px solid rgba(89, 0, 255, 0.13);
   background-color: rgba(132, 0, 255, 0.055);
+}
+
+@media only screen and (max-width: 768px) {
+  .SPWrapper {
+    flex-direction: column;
+  }
+  .SPIMG {
+    height: 40vh;
+  }
+  .SPInfoWrapper {
+    padding: 10px;
+  }
+  .SPFilter {
+    margin-top: 30px;
+  }
+  .SPFilterSizeOptionContainer {
+    text-align: center;
+
+    width: 50px;
+  }
 }

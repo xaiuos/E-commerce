@@ -1,3 +1,11 @@
-.Categorie{
-    display: flex;
+.Categorie {
+  display: flex;
+  box-shadow: inset -3px -3px 5px #00000013, inset 3px 3px 5px #decbff8c;
+}
+
+@media only screen and (max-width: 768px) {
+  .Categorie {
+    flex-direction: column;
+    height: 100vh;
+  }
 }

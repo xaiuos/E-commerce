@@ -51,7 +51,7 @@ function Footer() {
           </ul>
         </div>
         <div className={style.Right}>
-          <div className={style.RightTitle}>Contact</div>
+          <h3 className={style.RightTitle}>Contact</h3>
           <div className={style.RightContactItem}>
             <div className={style.Icon}>
               <RoomIcon />
@@ -68,7 +68,7 @@ function Footer() {
             <div className={style.Icon}>
               <MailIcon />
             </div>
-            <div>Contact@Xai.dev</div>
+            <div className={style.Right}>Contact@Xai.dev</div>
           </div>
           <div className={style.RightContactItem}>
             <div className={style.Icon}>

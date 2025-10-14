@@ -13,7 +13,7 @@ const ProductList = () => {
       <h1 className={style.PLT}>Dresses</h1>
       <div className={style.FilterContainer}>
         <div className={style.Filter}>
-          <div className={style.FilterText}>Filter Products:</div>
+          <div className={style.FilterText}>Filter :</div>
           <select>
             <option value="White">White</option>
             <option value="Black">Black</option>
@@ -29,7 +29,7 @@ const ProductList = () => {
           </select>
         </div>
         <div className={style.Filter}>
-          <div className={style.FilterText}>Sort Products:</div>
+          <div className={style.FilterText}>Sort :</div>
           <select name="sort">
             <option value="Newest">Newest</option>
             <option value="asc">Price (asc)</option>

@@ -1,62 +1,93 @@
-.NavBar { 
-    height: 40px;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.NavBar {
+  height: 40px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: inset -3px -3px 5px #00000013, inset 3px 3px 5px #decbff8c;
 }
 
-
-
-.FirstSide{
-    align-items: center;
-    justify-content: flex-start;
-    display: flex;
-    flex: 1;
+.FirstSide {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex: 1;
 }
-.FirstSide div{
-    margin: 25px;
+.FirstSide div {
+  margin: 25px;
 }
 
-.Language{
-    cursor: pointer;
+.Language {
+  cursor: pointer;
 }
-.SearchContainer{
-    display: flex;
-    border: 0.5px solid black;
-    border-radius: 10px;
-    padding: 10px;
+.SearchContainer {
+  display: flex;
+  box-shadow: inset -1px -1px 2px white, inset -1px -1px 2px black;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.SearchContainer input{
-    border: none;
-    outline: none; 
+.SearchContainer input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.SearchContainer input:focus {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.SecondSide {
+  font-weight: bold;
+  font-size: 4rem;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+.ThirdSide {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+.ThirdSide a {
+  margin: 25px;
+}
+.ThirdSide a {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .NavBar {
+    /* flex-wrap: wrap; */
+    height: auto;
     width: 100%;
-}
-.SearchContainer input:focus{
-    border: none;
-    outline: none; 
-    width: 100%;
-}
-.SecondSide{
-    align-items: center;
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-    flex: 1;
-}
-.ThirdSide{
-    
-    justify-content: flex-end;
-    display: flex;
-    align-items: center;
-flex: 1;
-text-align: center;
-}
-.ThirdSide div{
-    margin: 25px;
-}
-.ThirdSide div {
-    cursor: pointer;
+    padding: 0px;
+  }
+  .Language {
+    display: none;
+  }
+  .SearchContainer {
+    border: 1px solid black;
+    box-shadow: none;
+    width: 70px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .SearchContainer input {
+    border-radius: 30px;
+  }
+  .SecondSide {
+    font-size: 2rem;
+  }
+  .ThirdSide {
+    justify-content: center;
+    margin: 0px;
+    flex: 2;
+  }
+  .ThirdSide a {
+    margin: 5px;
+  }
 }

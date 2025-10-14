@@ -1,6 +1,4 @@
 .CartTitle {
-  font-weight: bold;
-  font-size: 40px;
   text-align: center;
 }
 
@@ -83,17 +81,13 @@
   margin: 20px;
   height: 50vh;
 }
-.SummaryTitle {
-  font-weight: bold;
-  font-size: 40px;
-}
 .SummaryItems {
   display: flex;
   justify-content: space-between;
   margin: 20px;
 }
 .SummaryTottal {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
 }
 .summaryButton {
@@ -107,4 +101,27 @@
 .ProductAmmountContainer {
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .Bag {
+    display: none;
+  }
+  .DetailsOfItems div,
+  b {
+    font-size: 1.5rem;
+  }
+  .BottomCartSection {
+    flex-direction: column;
+  }
+  .ProductDetail {
+    flex-direction: column;
+  }
+  .DetailPrice * {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .SummaryItems * {
+    font-size: 1.5rem;
+  }
 }

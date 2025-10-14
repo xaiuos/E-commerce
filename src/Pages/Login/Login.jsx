@@ -3,21 +3,33 @@ import style from "./Login.module.css";
 export const Login = () => {
   return (
     <>
-      <div className={style.LoginContainer}>
-        <div className={style.LoginInputContainer}>
-          <div className={style.LoginTitle}>Create Account</div>
-          <form className={style.LoginForm} action="" method="post">
-            <input type="Email" id="Email" placeholder="Email" />
-
-            <input type="Password" id="Password" placeholder="Password" />
+      {" "}
+      <div className={style.container} id="container">
+        <div className={style.Wrapper}>
+          <form className={style.form} action="#">
+            <h1 className={style.h1}>Sign in</h1>
+            <div>
+              <input
+                className={style.input}
+                type="email"
+                id="Email"
+                placeholder="Email"
+              />
+              <input
+                className={style.input}
+                type="password"
+                id="Password"
+                placeholder="Password"
+              />
+              <a className={style.a} href="#">
+                Forgot your password?
+              </a>
+              <a className={style.a} href="#">
+                Create Account
+              </a>
+            </div>
+            <button className={style.button}>Sign In</button>
           </form>
-          <button className={style.RegisterButton}>Log in</button>
-          <a href="" className={style.ForgetPassword}>
-            Forget Password
-          </a>
-          <a href="" className={style.CreateAccountLogin}>
-            Create Account
-          </a>
         </div>
       </div>
     </>

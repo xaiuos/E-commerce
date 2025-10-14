@@ -6,11 +6,11 @@ const NewsLetter = () => {
     <>
       <div className={style.NewsLetterContainer}>
         <h1 className={style.NewsLetterTitle}> Newsletter</h1>
-        <div className={style.NewsLetterDescription}>
+        <p className={style.NewsLetterDescription}>
           Get timely updates from your favorite products.
-        </div>
+        </p>
         <div className={style.NewsLetterInputContainer}>
-          <input placeholder="Your Email" type="text" />
+          <input id="Newsletter" placeholder="Your Email" type="text" />
           <button>
             <SendIcon />
           </button>

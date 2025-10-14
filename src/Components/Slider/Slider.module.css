@@ -57,11 +57,11 @@
   text-align: center;
 }
 .ImageLabel h1 {
-  font-size: 140px;
+  font-size: 8rem;
 }
 .ImageLabel p {
   margin: 50px 0px;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: 3px;
 }
@@ -70,7 +70,7 @@
 }
 .SliderButton {
   padding: 10px;
-  font-size: 40px;
+  font-size: 2.5rem;
   background-color: transparent;
   border-radius: 10px;
   cursor: pointer;
@@ -82,4 +82,10 @@
   background-color: black;
   color: white;
   border: 2px solid white;
+}
+
+@media only screen and (max-width: 1400px) {
+  .Slider {
+    display: none;
+  }
 }

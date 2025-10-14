@@ -1,13 +1,31 @@
+.PLT {
+  margin: 30px;
+}
+
 .FilterContainer {
   display: flex;
   justify-content: space-between;
 }
-.PLT {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 30px;
-}
 .Filter {
   display: flex;
   margin: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .FilterText {
+    margin: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .Filter {
+    margin: 0px;
+    flex-direction: column;
+  }
+  .Filter select {
+    width: 40vw;
+  }
+  .Filter option {
+    font-size: 2rem;
+  }
 }

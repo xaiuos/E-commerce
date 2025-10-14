@@ -1,9 +1,9 @@
 import style from "./App.module.css";
-import Register from "../Pages/Register/Register";
+import Home from "../Pages/Home/Home";
 function App() {
   return (
     <>
-      <Register />
+      <Home />
     </>
   );
 }

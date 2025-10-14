@@ -16,8 +16,8 @@ const NavBar = () => {
 
       <div className={style.SecondSide}>XAI.</div>
       <div className={style.ThirdSide}>
-        <div>Register</div>
-        <div>Login</div>
+        <a>Register</a>
+        <a>Login</a>
         <div>
           <Badge badgeContent={4} color="secondary">
             <ShoppingCartOutlinedIcon color="white" />

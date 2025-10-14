@@ -27,7 +27,7 @@ const Cart = () => {
           <h1 className={style.CartTitle}>Your Bag</h1>
           <div className={style.TopCartSection}>
             <CartButton Type={"NonFilled"}>Continue Shopping</CartButton>
-            <div>
+            <div className={style.Bag}>
               <span className={style.BagCounter}>Items in Bag (1) </span>
               <span className={style.BagCounter}>Items in Wishlist(1)</span>
             </div>
